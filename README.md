@@ -1,5 +1,7 @@
 # Online-Thrift-Store-Back-End
 
+This is The Back-End Part of my web application where you can Buy or Sell second Hand Clothes created as a learning Project
+
 ## Technology Stack
 
 
