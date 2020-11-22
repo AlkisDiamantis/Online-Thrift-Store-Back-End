@@ -1,4 +1,4 @@
-package com.project.thrifting.models.controllers;
+package com.project.thrifting.controllers;
 
 import com.project.thrifting.models.User;
 import com.project.thrifting.service.UserServiceInterface;

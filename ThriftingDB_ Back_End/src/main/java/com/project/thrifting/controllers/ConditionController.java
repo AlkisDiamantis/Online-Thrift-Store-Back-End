@@ -1,5 +1,5 @@
 
-package com.project.thrifting.models.controllers;
+package com.project.thrifting.controllers;
 
 import com.project.thrifting.models.Conditions;
 import com.project.thrifting.service.ConditionsServiceInterface;

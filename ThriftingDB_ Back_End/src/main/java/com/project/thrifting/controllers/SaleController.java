@@ -1,4 +1,4 @@
-package com.project.thrifting.models.controllers;
+package com.project.thrifting.controllers;
 
 import com.project.thrifting.Dto.SaleDto;
 import com.project.thrifting.models.Categories;

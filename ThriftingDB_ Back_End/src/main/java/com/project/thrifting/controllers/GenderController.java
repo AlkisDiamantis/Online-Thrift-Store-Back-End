@@ -1,5 +1,5 @@
 
-package com.project.thrifting.models.controllers;
+package com.project.thrifting.controllers;
 import com.project.thrifting.models.Genders;
 import com.project.thrifting.service.GenderServiceInterface;
 import java.util.List;

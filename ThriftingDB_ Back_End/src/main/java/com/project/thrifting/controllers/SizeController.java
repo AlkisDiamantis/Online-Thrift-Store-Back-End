@@ -1,5 +1,5 @@
 
-package com.project.thrifting.models.controllers;
+package com.project.thrifting.controllers;
 
 import com.project.thrifting.models.Sizes;
 import com.project.thrifting.service.SizeServiceInterface;
