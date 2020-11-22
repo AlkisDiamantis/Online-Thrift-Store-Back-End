@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> c7fb953ef16e1ae8448c77c43a85c51822a049ec
 package com.project.thrifting.security;
 
 import com.project.thrifting.security.jwt.AuthEntryPointJwt;
 import com.project.thrifting.security.jwt.AuthTokenFilter;
 import com.project.thrifting.security.services.UserDetailServiceImpl;
-<<<<<<< HEAD
-import java.util.Arrays;
-=======
->>>>>>> c7fb953ef16e1ae8448c77c43a85c51822a049ec
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,12 +16,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-<<<<<<< HEAD
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-=======
->>>>>>> c7fb953ef16e1ae8448c77c43a85c51822a049ec
 
 @Configuration
 @EnableWebSecurity
@@ -68,10 +54,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailServiceImpl).passwordEncoder(passwordEncoder());
 
     }
-//    String[] resources = new String[]{
-//        "/", "/home", "/pictureCheckCode", "/include/**",
-//        "/css/**", "/icons/**","/public/**","resources/**", "/images/**","/images2/**", "/js/**", "/layer/**"
-//    };
 
     @Bean
     @Override
@@ -90,20 +72,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-<<<<<<< HEAD
-                //                .antMatchers(resources).permitAll()           
                 .antMatchers("/welcome/**").permitAll()
-                //                .antMatchers("/api/test/**").permitAll()
-=======
-//                .antMatchers(resources).permitAll()           
+                .antMatchers("/api/test/**").permitAll()
                 .antMatchers("/welcome/**").permitAll()
-//                .antMatchers("/api/test/**").permitAll()
->>>>>>> c7fb953ef16e1ae8448c77c43a85c51822a049ec
+                .antMatchers("/api/test/**").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
     }
-<<<<<<< HEAD
 
 //    @Bean
 //    CorsConfigurationSource corsConfigurationSource() {
@@ -116,7 +92,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //        source.registerCorsConfiguration("/**", configuration);
 //        return source;
 //    }
-
-=======
->>>>>>> c7fb953ef16e1ae8448c77c43a85c51822a049ec
 }
